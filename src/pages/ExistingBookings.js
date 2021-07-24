@@ -1,3 +1,6 @@
+// Import local files.
+import BookingList from '../components/bookings/BookingList';
+
 // Create some dummy booking.
 const DUMMY_DATA = [
   {
@@ -66,11 +69,7 @@ function ExistingBookings() {
   return (
     <section>
       <h2>Existing Bookings:</h2>
-      <ul>
-        {DUMMY_DATA.map((booking) => {
-          return <li key={booking.id}>{booking.session}</li>;
-        })}
-      </ul>
+      <BookingList bookings={DUMMY_DATA} />
     </section>
   );
 }
