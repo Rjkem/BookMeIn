@@ -1,11 +1,14 @@
-// Third party imports
+// Third party imports.
 import { Link } from "react-router-dom";
+
+// Local imports.
+import classes from './MainNavigation.module.css';
 
 function MainNavigation() {
   return (
     // Create the NavBar at the top of the page
-    <header>
-      <div>BookMeIn</div>
+    <header className={classes.header}>
+      <div className={classes.logo}>BookMeIn</div>
       <nav>
         <ul>
           <li>

@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router-dom";
 
 // Local imports.
 import DashboardPage from "./pages/Dashboard";
-import ExistingBookingsPage from "./pages/ExistingBookings";
 import FavouritesPage from "./pages/Favourites";
 import NewBookingPage from "./pages/NewBooking";
 import MainNavigation from "./components/layout/MainNavigation";
