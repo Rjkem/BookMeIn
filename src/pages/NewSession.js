@@ -1,18 +1,25 @@
-// Import local files.
+// Thid party imports
+import { useHistory } from "react-router-dom";
+
+// Import local files
 import NewSessionForm from "../components/bookings/NewSessionForm";
 
 function NewSessionPage() {
+  const history = useHistory();
+
   function addSessionHandler(sessionData) {
     fetch(
-      'https://bookmein-4e530-default-rtdb.europe-west1.firebasedatabase.app/sessions.json',
+      "https://bookmein-4e530-default-rtdb.europe-west1.firebasedatabase.app/sessions.json",
       {
-        method: 'POST',
+        method: "POST",
         body: JSON.stringify(sessionData),
         headers: {
-          'Content-Type': 'application/jsopn'
-        }
+          "Content-Type": "application/jsopn",
+        },
       }
-    );
+    ).then(() => {
+      history.replace('/');
+    });
   }
 
   return (
