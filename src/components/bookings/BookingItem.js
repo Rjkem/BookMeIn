@@ -10,13 +10,13 @@ function BookingItem(props) {
           <img src={props.image} alt={props.session} />
         </div>
         <div className={classes.content}>
-          <h3>{props.session}</h3>
+          <h3>{props.title}</h3>
           <date>{props.date}</date>
           <time>
             {props.start_time} - {props.finish_time}
           </time>
-          <category>{props.category}</category>
-          <attendees>{props.attendees}</attendees>
+          <sub_category>{props.sub_category}</sub_category>
+          <attendees>Attending: 0 / {props.max_attendees}</attendees>
         </div>
         <div className={classes.actions}>
           <button>To Favourites</button>
