@@ -6,7 +6,7 @@ import Card from "../ui/Card";
 import classes from "./NewSessionForm.module.css";
 
 // Get the user imports from the form
-function NewSessionForm() {
+function NewSessionForm(props) {
   const sessionTitleInputRef = useRef();
   const dateInputRef = useRef();
   const startTimeInputRef = useRef();
@@ -42,8 +42,8 @@ function NewSessionForm() {
         image: enteredImage
     }
 
-    // Display the data for testing
-    console.log(sessionData);
+    // Put the data in props
+    props.onAddSession(sessionData);
   }
 
   return (
