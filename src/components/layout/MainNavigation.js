@@ -15,7 +15,7 @@ function MainNavigation() {
             <Link to="/">Dashboard</Link>
           </li>
           <li>
-            <Link to="/new-booking">New Booking</Link>
+            <Link to="/new-session">New Session</Link>
           </li>
           <li>
             <Link to="/favourites">My Favourites</Link>
