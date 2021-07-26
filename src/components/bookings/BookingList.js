@@ -10,12 +10,12 @@ function BookingList(props) {
           key={booking.id}
           id={booking.id}
           image={booking.image}
-          session={booking.session}
+          title={booking.title}
           date={booking.date}
           start_time={booking.start_time}
           finish_time={booking.finish_time}
-          category={booking.category}
-          attendees={booking.attendees}
+          sub_category={booking.sub_category}
+          max_attendees={booking.max_attendees}
         />
       ))}
     </ul>
