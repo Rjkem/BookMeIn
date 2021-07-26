@@ -1,5 +1,5 @@
 // Third party imports
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 
 // Local imports
 import FavouritesContext from '../store/favourites-context';

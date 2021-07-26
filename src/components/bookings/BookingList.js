@@ -1,3 +1,6 @@
+// Third party imports
+import React from "react";
+
 // Import local files
 import classes from "./BookingList.module.css";
 import BookingItem from "./BookingItem";

@@ -1,5 +1,5 @@
 // Third party imports
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 // Import local files
 import BookingList from "../components/bookings/BookingList";

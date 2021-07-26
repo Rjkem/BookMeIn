@@ -1,4 +1,5 @@
 // Thid party imports
+import React from "react";
 import { useHistory } from "react-router-dom";
 
 // Import local files
