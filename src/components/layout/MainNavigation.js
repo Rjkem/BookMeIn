@@ -1,5 +1,5 @@
 // Third party imports.
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 // Local imports.

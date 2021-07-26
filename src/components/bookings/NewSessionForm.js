@@ -1,5 +1,5 @@
 // Third party imports
-import { useRef } from "react";
+import React, { useRef } from "react";
 
 // Import local files
 import Card from "../ui/Card";

@@ -1,5 +1,5 @@
 // Third party imports
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 
 // Import local files
 import Card from "../ui/Card";
