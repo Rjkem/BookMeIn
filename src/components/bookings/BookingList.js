@@ -2,12 +2,12 @@
 import React from "react";
 
 // Import local files
-import classes from "./BookingList.module.css";
+import "./BookingList.module.css";
 import BookingItem from "./BookingItem";
 
 function BookingList(props) {
   return (
-    <ul className={classes.list}>
+    <ul className={"list"}>
       {props.bookings.map((booking) => (
         <BookingItem
           key={booking.id}
