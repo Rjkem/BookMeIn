@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 
 // Import local files
 import Card from "../ui/Card";
-import classes from "./BookingItem.module.css";
+import "./BookingItem.module.css";
 import FavouritesContext from '../../store/favourites-context';
 
 function BookingItem(props) {
@@ -30,12 +30,12 @@ function BookingItem(props) {
   }
 
   return (
-    <li className={classes.item}>
+    <li className={"item"}>
       <Card>
-        <div className={classes.image}>
+        <div className={"image"}>
           <img src={props.image} alt={props.session} />
         </div>
-        <div className={classes.content}>
+        <div className={"content"}>
           <h3>{props.title}</h3>
           <date>{props.date}</date>
           <time>
@@ -44,7 +44,7 @@ function BookingItem(props) {
           <sub_category>{props.sub_category}</sub_category>
           <attendees>Attending: 0 / {props.max_attendees}</attendees>
         </div>
-        <div className={classes.actions}>
+        <div className={"actions"}>
           <button onClick={toggleFavouriteStatusHandler}>{sessionIsFavourite ? 'Remove from Favourites' : 'Add to Favourites'}</button>
         </div>
       </Card>
