@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 // Local imports.
-import classes from "./MainNavigation.module.css";
+import "./MainNavigation.module.css";
 import FavouritesContext from "../../store/favourites-context";
 
 function MainNavigation() {
@@ -11,8 +11,8 @@ function MainNavigation() {
 
   return (
     // Create the NavBar at the top of the page
-    <header className={classes.header}>
-      <div className={classes.logo}>BookMeIn</div>
+    <header className={"header"}>
+      <div className={"logo"}>BookMeIn</div>
       <nav>
         <ul>
           <li>
@@ -23,7 +23,7 @@ function MainNavigation() {
           </li>
           <li>
             <Link to="/favourites">
-              My Favourites<span className={classes.badge}>{favouritesCtx.totalFavourites}</span>
+              My Favourites<span className={"badge"}>{favouritesCtx.totalFavourites}</span>
             </Link>
           </li>
         </ul>
