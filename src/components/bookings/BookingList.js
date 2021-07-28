@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import local files
-import "./BookingList.module.css";
+import "./BookingList.css";
 import BookingItem from "./BookingItem";
 
 function BookingList(props) {

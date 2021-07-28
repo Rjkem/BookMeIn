@@ -2,7 +2,7 @@
 import React from "react";
 
 // Import local files.
-import "./Layout.module.css";
+import "./Layout.css";
 import MainNavigation from "./MainNavigation";
 
 function Layout(props) {
