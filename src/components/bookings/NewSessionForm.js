@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 
 // Import local files
 import Card from "../ui/Card";
-import "./NewSessionForm.module.css";
+import "./NewSessionForm.css";
 
 // Get the user imports from the form
 function NewSessionForm(props) {

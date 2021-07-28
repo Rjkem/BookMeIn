@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 
 // Import local files
 import Card from "../ui/Card";
-import "./BookingItem.module.css";
+import "./BookingItem.css";
 import FavouritesContext from '../../store/favourites-context';
 
 function BookingItem(props) {

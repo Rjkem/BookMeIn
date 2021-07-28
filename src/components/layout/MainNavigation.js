@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 // Local imports.
-import "./MainNavigation.module.css";
+import "./MainNavigation.css";
 import FavouritesContext from "../../store/favourites-context";
 
 function MainNavigation() {
