@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 // Import local files
-import BookingList from "../components/bookings/BookingList";
+import SessionList from "../components/sessions/SessionList";
 
 function ExistingBookings() {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,7 +44,7 @@ function ExistingBookings() {
   return (
     <section>
       <h2>Existing Bookings:</h2>
-      <BookingList bookings={loadedSessions} />
+      <SessionList bookings={loadedSessions} />
     </section>
   );
 }

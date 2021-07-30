@@ -5,6 +5,7 @@ import { Route, Switch } from "react-router-dom";
 // Local imports.
 import DashboardPage from "./pages/Dashboard";
 import FavouritesPage from "./pages/Favourites";
+import NewBookingPage from "./pages/NewBooking";
 import NewSessionPage from "./pages/NewSession";
 import Layout from "./components/layout/Layout";
 
@@ -16,6 +17,9 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <DashboardPage />
+          </Route>
+          <Route path="/new-booking">
+            <NewBookingPage />
           </Route>
           <Route path="/new-session">
             <NewSessionPage />

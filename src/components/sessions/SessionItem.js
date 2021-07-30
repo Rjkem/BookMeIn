@@ -1,12 +1,12 @@
 // Third party imports
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
 // Import local files
 import Card from "../ui/Card";
-import "./BookingItem.css";
-import FavouritesContext from '../../store/favourites-context';
+import "./SessionItem.css";
+import FavouritesContext from "../../store/favourites-context";
 
-function BookingItem(props) {
+function SessionItem(props) {
   const favouritesCtx = useContext(FavouritesContext);
 
   const sessionIsFavourite = favouritesCtx.sessionIsFavourite(props.id);
@@ -24,7 +24,7 @@ function BookingItem(props) {
         start_time: props.start_time,
         finish_time: props.finish_time,
         max_attendees: props.max_attendees,
-        image: props.image
+        image: props.image,
       });
     }
   }
@@ -45,11 +45,15 @@ function BookingItem(props) {
           <attendees>Attending: 0 / {props.max_attendees}</attendees>
         </div>
         <div className={"actions"}>
-          <button onClick={toggleFavouriteStatusHandler}>{sessionIsFavourite ? 'Remove from Favourites' : 'Add to Favourites'}</button>
+          <button onClick={toggleFavouriteStatusHandler}>
+            {sessionIsFavourite
+              ? "Remove from Favourites"
+              : "Add to Favourites"}
+          </button>
         </div>
       </Card>
     </li>
   );
 }
 
-export default BookingItem;
+export default SessionItem;

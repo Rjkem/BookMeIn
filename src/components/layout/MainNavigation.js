@@ -19,7 +19,7 @@ function MainNavigation() {
             <Link to="/">Dashboard</Link>
           </li>
           <li>
-            <Link to="/new-session">New Booking</Link>
+            <Link to="/new-booking">New Booking</Link>
           </li>
           <li>
             <Link to="/new-session">New Session</Link>

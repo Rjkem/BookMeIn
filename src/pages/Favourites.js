@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 
 // Local imports
 import FavouritesContext from '../store/favourites-context';
-import BookingList from '../components/bookings/BookingList';
+import SessionList from '../components/sessions/SessionList';
 
 function FavouritesPage() {
   const favouritesCtx = useContext(FavouritesContext);
@@ -13,7 +13,7 @@ function FavouritesPage() {
   if (favouritesCtx.totalFavourites === 0) {
     content = <p>You have not added any sessions as favourites yet.</p>
   } else {
-    content = <BookingList bookings={favouritesCtx.favourites} />
+    content = <SessionList bookings={favouritesCtx.favourites} />
   }
 
   return <section>
