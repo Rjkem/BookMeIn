@@ -3,7 +3,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 
 // Import local files
-import NewSessionForm from "../components/bookings/NewSessionForm";
+import NewSessionForm from "../components/sessions/NewSessionForm";
 
 function NewSessionPage() {
   const history = useHistory();
@@ -15,7 +15,7 @@ function NewSessionPage() {
         method: "POST",
         body: JSON.stringify(sessionData),
         headers: {
-          "Content-Type": "application/jsopn",
+          "Content-Type": "application/json",
         },
       }
     ).then(() => {

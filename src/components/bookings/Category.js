@@ -1,10 +1,10 @@
 // Third party imports
 import React, { useState, useEffect } from "react";
 
-// Import local files
-import SessionList from "../components/sessions/SessionList";
+// Local imports
+import CategoryList from "../bookings/CategoryList";
 
-function ExistingBookings() {
+function Category() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedSessions, setLoadedSessions] = useState([]);
 
@@ -22,7 +22,7 @@ function ExistingBookings() {
         for (const key in data) {
           const session = {
             id: key,
-            ...data[key]
+            ...data[key],
           };
 
           sessions.push(session);
@@ -43,10 +43,10 @@ function ExistingBookings() {
 
   return (
     <section>
-      <h2>Existing Bookings:</h2>
-      <SessionList bookings={loadedSessions} />
+      <h1>Top level categories</h1>
+      <CategoryList bookings={loadedSessions} />
     </section>
   );
 }
 
-export default ExistingBookings;
+export default Category;
